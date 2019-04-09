@@ -7,6 +7,23 @@ var calc = function () {
 
 !function () {
 
+Number.parse = function (a) {
+  var ord, r, s, _
+
+  a = a.split('.'); a[1] || (a[1] = '')
+  _ = a[0] + a[1]
+  if (Number.isLittle) {
+    ord = a[0].length - 1
+    _ = _.split('').reverse().join('')
+  } else
+  {
+    ord = a[1].length
+  }
+  r = parseInt(_, Number.radix)
+  s = Math.pow(Number.radix, ord)
+  return new Adele(r, s).finalize
+}
+
 var
 set = function (a) {
   e.value = a; e.data.textContent = a.toString()
