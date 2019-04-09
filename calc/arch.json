@@ -1,0 +1,6 @@
+{
+  "name": "calc/arch",
+  "short_name": "calc/arch",
+  "start_url": "arch.html",
+  "display": "standalone"
+}

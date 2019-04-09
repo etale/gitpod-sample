@@ -1,0 +1,6 @@
+{
+  "name": "calc/adele",
+  "short_name": "calc/adele",
+  "start_url": "adele.html",
+  "display": "standalone"
+}
