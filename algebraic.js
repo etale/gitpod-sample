@@ -51,9 +51,7 @@ class Algebraic {
       )
     )
   }
-  lcm(a) {
-    return this * a / this.gcd(a)
-  }
+  lcm(a) {　return this * a / this.gcd(a)　}
   _inv(a) {
     return (
       ((_, x, z, n) => {
