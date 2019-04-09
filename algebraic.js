@@ -204,6 +204,7 @@ class Arch extends Algebraic {
       new Arch(exp * cos, exp * sin / PI2)
     ))(ord, amp)
   ))(this)}
+  pow(a) { return new Arch(this.ord * a, this.arg * a)}
   toString() { return (({ ord, arg }) => {
     ord = ord.toFixed(Arch.precision).split('.')
     arg = arg.toFixed(Arch.precision).split('.')
