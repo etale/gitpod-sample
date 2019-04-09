@@ -35,7 +35,7 @@ isFixed = function() {
   return e.hasOwnProperty('value')
 },
 fix = function() {
-  e.value || set(parseComplex(e.data.textContent))
+  e.value || set(parseArch(e.data.textContent))
 },
 fixAsIs = function() {
   set(e.value ? e.value.exp() : parseArch(e.data.textContent + 'X'))
