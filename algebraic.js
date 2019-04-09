@@ -51,6 +51,21 @@ class Algebraic {
       )
     )
   }
+  unitbody(a) {
+    return (
+      (({ unit, body, unity }) => {
+        let d
+        while (true) {
+          d = body.gcd(a)
+          if (d.isUnity) {
+            break
+          }
+          body /= d; unity *= d
+        }
+        return [unit * body, unity]
+      })(this)
+    )
+  }
   lcm(a) {　return this * a / this.gcd(a)　}
   _inv(a) {
     return (
