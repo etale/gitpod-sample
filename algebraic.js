@@ -36,23 +36,6 @@ class Algebraic {
   }
   ub(a) {
     return (
-      this.isZero || a.isZero ? [this.unit, this.body] : (
-        ((_, b) => {
-          let d
-          while (true) {
-            d = _.gcd(a)
-            if (d.isUnity) {
-              break
-            }
-            _ /= d; b *= d
-          }
-          return [_, b]
-        })(this.valueOf(), this.unity)
-      )
-    )
-  }
-  unitbody(a) {
-    return (
       (({ unit, body, unity }) => {
         let d
         while (true) {
