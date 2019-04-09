@@ -19,8 +19,8 @@ Number.parse = function (a) {
   {
     ord = a[1].length
   }
-  r = parseInt(_, Number.radix)
-  s = Math.pow(Number.radix, ord)
+  r = BigInt(parseInt(_, Number.radix))
+  s = BigInt(Number.radix ** ord)
   return new Adele(r, s).finalize
 }
 
