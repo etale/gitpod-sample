@@ -60,7 +60,6 @@ class Algebraic {
         while (!a.isZero) {
           (([q, r]) => {
             [_, a, x, z] = [a, r, z, x - q * z]
-            console.log({_, a, x, z })
           })(_.divmod(a))
         }
         return x.mod(n)
