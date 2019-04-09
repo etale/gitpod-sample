@@ -134,7 +134,7 @@ func['ˆ'] = function () {
   var _
 
   if (e.previousSibling) {
-    fix(); _ = pop(); set(e.value ? e.value.pow(_) : _)
+    fix(); _ = pop(); set(e.value ? e.value.pow(_.r) : _)
   }
 }
 func['↕'] = function () {
