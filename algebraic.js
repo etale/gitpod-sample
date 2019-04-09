@@ -37,6 +37,9 @@ class Algebraic {
   ub(a) {
     return (
       (({ unit, body, unity }) => {
+        if (body.isZero || a.isZero) {
+          return [unit, body]
+        }
         let d
         while (true) {
           d = body.gcd(a)
